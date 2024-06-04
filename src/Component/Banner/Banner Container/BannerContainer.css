@@ -1,0 +1,51 @@
+/* CustomSlider.css */
+
+.custom-slider-container {
+  width: 100%;
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none; /* Hide default arrow icons */
+}
+
+.slick-prev,
+.slick-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(228, 10, 10, 0.5); /* Customize arrow button background */
+  color: white; /* Customize arrow text color */
+  border-radius: 50%; /* Make arrow buttons round */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 50px;
+}
+
+.slick-next {
+  right: 50px; /* Adjust position */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4caf50;
+}
+
+.slide h3 {
+  color: #333;
+}
