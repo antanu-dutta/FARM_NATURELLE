@@ -16,13 +16,19 @@ import ProductContainer from "./Component/Product Item Container/Product Contain
 import { Honey } from "./Component/Product Item Container/Product Items/Honey";
 import { Oil } from "./Component/Product Item Container/Product Items/Oil";
 import { Ghee } from "./Component/Product Item Container/Product Items/Ghee";
+import { Juice } from "./Component/Product Item Container/Product Items/Juice";
+import WhyFarmNaturelle from "./Component/Why Farm Naturelle/WhyFarmNaturelle";
+import Gift from "./Component/Gift Container/Gift";
+import Review from "./Component/Review/Review";
+import WelcomeSection from "./Component/Welcome Section/WelcomeSection";
+import AmazonReview from "./Component/Amazon Review/AmazonReview";
 
 function App() {
   return (
     <>
       <HeaderContainer />
       <BannerContainer />
-      <IconStrip firstStrip={firstStrip} />
+      <IconStrip Strip={firstStrip} />
       <ProductCategory
         card={ConcernCard}
         name="Shob by Concern"
@@ -53,6 +59,19 @@ function App() {
         subtitle={"Pure, farm-sourced, made through traditional method."}
         product={Ghee}
       />
+      <WhyFarmNaturelle />
+      <ProductContainer
+        title={"Herbal Juice"}
+        subtitle={
+          "Pure, Organic herbal juices sourced from farm ingredients has no added sugar."
+        }
+        product={Juice}
+      />
+      <Gift />
+      <Review />
+      <WelcomeSection />
+      <AmazonReview />
+      <IconStrip Strip={secondStrip} />
     </>
   );
 }

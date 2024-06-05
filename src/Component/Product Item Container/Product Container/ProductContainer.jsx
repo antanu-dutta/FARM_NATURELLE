@@ -34,7 +34,7 @@ function ProductContainer({ title, subtitle, product }) {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: product.length >= 3 ? 3 : product.length,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -98,9 +98,11 @@ function ProductContainer({ title, subtitle, product }) {
                     <span className="me-2 text-black text-base font-semibold">
                       Rs. {item.new_price}
                     </span>
-                    <span className=" bg-red-700 text-white px-2 py-1 rounded-md text-sm transition-all group-hover:bg-primary">
-                      {item.offer}
-                    </span>
+                    {item.offer && (
+                      <span className=" bg-red-700 text-white px-2 py-1 rounded-md text-sm transition-all group-hover:bg-primary">
+                        {item.offer}
+                      </span>
+                    )}
                   </div>
                   <button className="block w-full border transition-all border-primary py-3 rounded-3xl group-hover:bg-primary group-hover:text-white  text-primary uppercase font-semibold">
                     add to cart
