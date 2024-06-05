@@ -6,6 +6,8 @@ export default {
       colors: {
         primary: "#006944",
         secondary: "#f2f7e3",
+        brown: "#855245",
+        orange: "#df6857",
       },
       fontFamily: {
         jost: ["Jost", "sans-serif"],

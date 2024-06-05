@@ -12,6 +12,10 @@ import {
 } from "./Component/Icon Strip/IconStripDetails";
 import ProductCategory from "./Component/Product Category/ProductCategory";
 import Needed from "./Component/Needed/Needed";
+import ProductContainer from "./Component/Product Item Container/Product Container/ProductContainer";
+import { Honey } from "./Component/Product Item Container/Product Items/Honey";
+import { Oil } from "./Component/Product Item Container/Product Items/Oil";
+import { Ghee } from "./Component/Product Item Container/Product Items/Ghee";
 
 function App() {
   return (
@@ -29,6 +33,25 @@ function App() {
         card={productItem}
         name="Shob by Products"
         logo={productLogo}
+      />
+      <ProductContainer
+        title={"Pure Honey"}
+        subtitle={
+          "Bee-produced, unprocessed honey from a farm, pure and natural"
+        }
+        product={Honey}
+      />
+      <ProductContainer
+        title={"Cold Pressed Cooking Oils"}
+        subtitle={
+          "Cold-pressed, natural cooking oils sourced from farm ingredients for healthier cuisine."
+        }
+        product={Oil}
+      />
+      <ProductContainer
+        title={"Bilona A2 Ghee"}
+        subtitle={"Pure, farm-sourced, made through traditional method."}
+        product={Ghee}
       />
     </>
   );
