@@ -8,7 +8,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Home from "./Component/Home/Home.jsx";
+import Home from "./Component/Home/Home Container/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
