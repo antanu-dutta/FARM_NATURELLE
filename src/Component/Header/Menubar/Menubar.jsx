@@ -4,6 +4,7 @@ import logo from "../../../assets/logo.webp";
 import Searchbar from "../Search Bar/Searchbar";
 import Likeopen from "../LIke Open/Likeopen";
 import CartOpen from "../Cart Open/CartOpen";
+import { Link } from "react-router-dom";
 function Menubar() {
   const menuData = [
     {
@@ -92,7 +93,10 @@ function Menubar() {
         }`}
       >
         <div id="logo_menu" className="flex items-center gap-6">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+
           <ul className="flex relative">
             {menuData.map((menu, index) => (
               <div
