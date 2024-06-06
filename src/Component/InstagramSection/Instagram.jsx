@@ -32,7 +32,7 @@ function Instagram({ firstSection, secondSection }) {
                 className="object-cover absolute top-0 group-hover:brightness-[0.3] left-0 w-full h-full z-[-50]"
                 alt=""
               />
-              <p className="text-white text-sm">{item.text}</p>
+              <p className="text-white text-sm ">{item.text}</p>
             </div>
           ))}
         </div>

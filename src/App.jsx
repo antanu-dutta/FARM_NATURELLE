@@ -29,6 +29,8 @@ import {
   firstSection,
   secondSection,
 } from "./Component/InstagramSection/InstagramCard";
+import Available from "./Component/Available Section/Available";
+import Footer from "./Component/Footer Container/Footer";
 
 function App() {
   return (
@@ -81,6 +83,8 @@ function App() {
       <IconStrip Strip={secondStrip} />
       <HappyCustomer CardDetails={CardDetails} />
       <Instagram firstSection={firstSection} secondSection={secondSection} />
+      <Available />
+      <Footer />
     </>
   );
 }
