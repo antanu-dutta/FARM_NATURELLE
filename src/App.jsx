@@ -22,6 +22,13 @@ import Gift from "./Component/Gift Container/Gift";
 import Review from "./Component/Review/Review";
 import WelcomeSection from "./Component/Welcome Section/WelcomeSection";
 import AmazonReview from "./Component/Amazon Review/AmazonReview";
+import HappyCustomer from "./Component/Happy Customers/HappyCustomer";
+import { CardDetails } from "./Component/Happy Customers/CustomerCard";
+import Instagram from "./Component/InstagramSection/Instagram";
+import {
+  firstSection,
+  secondSection,
+} from "./Component/InstagramSection/InstagramCard";
 
 function App() {
   return (
@@ -72,6 +79,8 @@ function App() {
       <WelcomeSection />
       <AmazonReview />
       <IconStrip Strip={secondStrip} />
+      <HappyCustomer CardDetails={CardDetails} />
+      <Instagram firstSection={firstSection} secondSection={secondSection} />
     </>
   );
 }
